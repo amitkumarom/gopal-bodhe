@@ -1,7 +1,7 @@
 // File: assets/js/books.js
 
 // ====== CONFIG ======
-const WHATSAPP_NUMBER = "++96877248284"; // e.g. 919876543210 (country code + number, no +)
+const WHATSAPP_NUMBER = "+96877248284"; // e.g. 919876543210 (country code + number, no +)
 const DEFAULT_CURRENCY = "INR";
 
 const SITE_CONFIG = {
