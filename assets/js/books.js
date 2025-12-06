@@ -1,7 +1,7 @@
 // File: assets/js/books.js
 
 // ====== CONFIG ======
-const WHATSAPP_NUMBER = "91XXXXXXXXXX"; // e.g. 919876543210 (country code + number, no +)
+const WHATSAPP_NUMBER = "968772482824"; // e.g. 919876543210 (country code + number, no +)
 const DEFAULT_CURRENCY = "INR";
 
 // Author meta for structured data & reuse
@@ -37,6 +37,138 @@ const BOOKS = [
     externalPurchaseLink: "", // e.g. Amazon / Flipkart / Razorpay link if available
     whatsappMessageTemplate:
       "Namaste, I would like to order the book \"Sample Book One\" by Shri Gopal Bodhe. Please share payment and shipping details."
+  },
+  {
+    id: 2,
+    title: "Sample Book Two",
+    slug: "sample-book-two",
+    subtitle: "",
+    description:
+      "Another placeholder entry. Add the real book name, theme, and a short blurb here.",
+    coverImage: "assets/images/books/Fort_Book.jpg",
+    price: 299,
+    currency: DEFAULT_CURRENCY,
+    isbn: "",
+    publisher: "",
+    publicationYear: 2020,
+    pages: 180,
+    language: "Marathi",
+    format: "Paperback",
+    tags: ["sample"],
+    isActive: true,
+    externalPurchaseLink: "",
+    whatsappMessageTemplate:
+      "Namaste, I am interested in buying \"Sample Book Two\" by Shri Gopal Bodhe. Please share payment and shipping details."
+  },
+  {
+    id: 2,
+    title: "Sample Book Two",
+    slug: "sample-book-two",
+    subtitle: "",
+    description:
+      "Another placeholder entry. Add the real book name, theme, and a short blurb here.",
+    coverImage: "assets/images/books/Fort_Book.jpg",
+    price: 299,
+    currency: DEFAULT_CURRENCY,
+    isbn: "",
+    publisher: "",
+    publicationYear: 2020,
+    pages: 180,
+    language: "Marathi",
+    format: "Paperback",
+    tags: ["sample"],
+    isActive: true,
+    externalPurchaseLink: "",
+    whatsappMessageTemplate:
+      "Namaste, I am interested in buying \"Sample Book Two\" by Shri Gopal Bodhe. Please share payment and shipping details."
+  },
+  {
+    id: 2,
+    title: "Sample Book Two",
+    slug: "sample-book-two",
+    subtitle: "",
+    description:
+      "Another placeholder entry. Add the real book name, theme, and a short blurb here.",
+    coverImage: "assets/images/books/Fort_Book.jpg",
+    price: 299,
+    currency: DEFAULT_CURRENCY,
+    isbn: "",
+    publisher: "",
+    publicationYear: 2020,
+    pages: 180,
+    language: "Marathi",
+    format: "Paperback",
+    tags: ["sample"],
+    isActive: true,
+    externalPurchaseLink: "",
+    whatsappMessageTemplate:
+      "Namaste, I am interested in buying \"Sample Book Two\" by Shri Gopal Bodhe. Please share payment and shipping details."
+  },
+  {
+    id: 2,
+    title: "Sample Book Two",
+    slug: "sample-book-two",
+    subtitle: "",
+    description:
+      "Another placeholder entry. Add the real book name, theme, and a short blurb here.",
+    coverImage: "assets/images/books/Fort_Book.jpg",
+    price: 299,
+    currency: DEFAULT_CURRENCY,
+    isbn: "",
+    publisher: "",
+    publicationYear: 2020,
+    pages: 180,
+    language: "Marathi",
+    format: "Paperback",
+    tags: ["sample"],
+    isActive: true,
+    externalPurchaseLink: "",
+    whatsappMessageTemplate:
+      "Namaste, I am interested in buying \"Sample Book Two\" by Shri Gopal Bodhe. Please share payment and shipping details."
+  },
+  {
+    id: 2,
+    title: "Sample Book Two",
+    slug: "sample-book-two",
+    subtitle: "",
+    description:
+      "Another placeholder entry. Add the real book name, theme, and a short blurb here.",
+    coverImage: "assets/images/books/Fort_Book.jpg",
+    price: 299,
+    currency: DEFAULT_CURRENCY,
+    isbn: "",
+    publisher: "",
+    publicationYear: 2020,
+    pages: 180,
+    language: "Marathi",
+    format: "Paperback",
+    tags: ["sample"],
+    isActive: true,
+    externalPurchaseLink: "",
+    whatsappMessageTemplate:
+      "Namaste, I am interested in buying \"Sample Book Two\" by Shri Gopal Bodhe. Please share payment and shipping details."
+  },
+  {
+    id: 2,
+    title: "Sample Book Two",
+    slug: "sample-book-two",
+    subtitle: "",
+    description:
+      "Another placeholder entry. Add the real book name, theme, and a short blurb here.",
+    coverImage: "assets/images/books/Fort_Book.jpg",
+    price: 299,
+    currency: DEFAULT_CURRENCY,
+    isbn: "",
+    publisher: "",
+    publicationYear: 2020,
+    pages: 180,
+    language: "Marathi",
+    format: "Paperback",
+    tags: ["sample"],
+    isActive: true,
+    externalPurchaseLink: "",
+    whatsappMessageTemplate:
+      "Namaste, I am interested in buying \"Sample Book Two\" by Shri Gopal Bodhe. Please share payment and shipping details."
   },
   {
     id: 2,

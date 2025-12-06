@@ -16,7 +16,7 @@ designed to be hosted on **GitHub Pages**.
      via `externalPurchaseLink`.
 
 3. Replace the placeholder images:
-   - `assets/images/Bodhe_Sir.jpg`
+   - `assets/images/bodhe-sir.jpg`
    - `assets/images/books/A_Trade_Rout.jpg`
    - `assets/images/books/Fort_Book.jpg`
    with real photos / book covers (keep the filenames or update paths in JS).
