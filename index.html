@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gopal Bodhe – Official Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Gopal Bodhe – official website. Discover his books and writings, and order directly via WhatsApp." />
+
+  <!-- Canonical & basic SEO -->
+  <!-- TODO: Replace USERNAME with your GitHub username once deployed -->
+  <link rel="canonical" href="https://USERNAME.github.io/gopal-bodhe-site/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Gopal Bodhe – Official Website" />
+  <meta property="og:description" content="Discover books by Gopal Bodhe and order directly via WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://USERNAME.github.io/gopal-bodhe-site/" />
+  <meta property="og:image" content="https://USERNAME.github.io/gopal-bodhe-site/assets/images/Bodhe_Sir.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gopal Bodhe – Official Website" />
+  <meta name="twitter:description" content="Books, stories, and more by author Gopal Bodhe." />
+  <meta name="twitter:image" content="https://USERNAME.github.io/gopal-bodhe-site/assets/images/Bodhe_Sir.jpg" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Google Analytics (optional) -->
+  <!-- Replace G-XXXXXXXXXX with your GA4 Measurement ID, then uncomment.
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-logo">Gopal Bodhe</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#featured">Books</a>
+        <a href="books.html">All Books</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="about">
+      <div class="hero-text">
+        <h1>Gopal Bodhe</h1>
+        <p class="hero-tagline">Author of engaging, insightful and thought-provoking books.</p>
+        <p class="hero-bio">
+          This is a placeholder bio for Shri Gopal Bodhe. Replace this text with a 2–3 paragraph
+          introduction covering his background, core themes, years of writing, and any notable
+          recognitions. Keep it reader-friendly and focused on why someone should pick up his books.
+        </p>
+        <div class="hero-actions">
+          <a href="#featured" class="btn btn-primary">View Books</a>
+          <a href="books.html" class="btn btn-secondary">See All Titles</a>
+        </div>
+      </div>
+      <div>
+        <img src="assets/images/Bodhe_Sir.jpg" alt="Gopal Bodhe" class="author-photo" />
+      </div>
+    </section>
+
+    <!-- Featured books -->
+    <section class="section" id="featured">
+      <div class="section-header">
+        <h2>Featured Books</h2>
+        <p>A quick look at some of the most-loved titles.</p>
+      </div>
+      <div id="featured-books" class="book-grid">
+        <!-- Filled by JS -->
+      </div>
+    </section>
+
+    <!-- Social proof / testimonials -->
+    <section class="section" id="testimonials">
+      <div class="section-header">
+        <h2>What Readers Are Saying</h2>
+        <p>Real feedback from people who’ve read the books.</p>
+      </div>
+      <div class="testimonials">
+        <article class="testimonial-card">
+          <p class="testimonial-text">
+            “Powerful and honest writing. These books stay with you long after you’ve put them down.”
+          </p>
+          <div class="testimonial-author">A Reader</div>
+          <div class="testimonial-meta">Verified buyer</div>
+        </article>
+        <article class="testimonial-card">
+          <p class="testimonial-text">
+            “Each chapter is grounded in lived experience and practical wisdom.”
+          </p>
+          <div class="testimonial-author">Book Club Host</div>
+          <div class="testimonial-meta">Community book club</div>
+        </article>
+        <article class="testimonial-card">
+          <p class="testimonial-text">
+            “We used these books as part of our study circle and the discussions were incredibly rich.”
+          </p>
+          <div class="testimonial-author">Educator</div>
+          <div class="testimonial-meta">College faculty</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="section-header">
+        <h2>Contact & Orders</h2>
+        <p>Reach out for orders, bulk purchases, or event invitations.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Order via WhatsApp</h3>
+          <p>
+            You can order books directly via WhatsApp. Send a message with the book title(s)
+            and your city, and you’ll receive payment and delivery details.
+          </p>
+          <a href="#" id="whatsapp-contact-main" class="btn btn-primary" target="_blank">
+            Chat on WhatsApp
+          </a>
+        </div>
+        <div class="contact-card">
+          <h3>Other Contact</h3>
+          <ul class="contact-list">
+            <li>
+              Email:
+              <a href="mailto:change-this-email@example.com">change-this-email@example.com</a>
+              <!-- TODO: Replace with a real email ID -->
+            </li>
+            <li>For talks, events, or study circles, mention “Invitation” in the subject line.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating WhatsApp -->
+  <a href="#" id="floating-whatsapp">
+    <span>WhatsApp</span>
+  </a>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Gopal Bodhe. All rights reserved.</span>
+      <span><a href="books.html" style="color:#9ca3af;">View all books</a></span>
+    </div>
+  </footer>
+
+  <script src="assets/js/books.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const mainBtn = document.getElementById("whatsapp-contact-main");
+      if (mainBtn && typeof getGlobalWhatsAppLink === "function") {
+        mainBtn.href = getGlobalWhatsAppLink();
+      }
+      const yearSpan = document.getElementById("year");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
+</body>
+</html>

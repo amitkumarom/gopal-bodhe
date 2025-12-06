@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Books by Gopal Bodhe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Browse the complete list of books by author Gopal Bodhe and order directly via WhatsApp." />
+
+  <!-- TODO: Replace USERNAME with your GitHub username once deployed -->
+  <link rel="canonical" href="https://USERNAME.github.io/gopal-bodhe-site/books.html" />
+
+  <meta property="og:title" content="Books by Gopal Bodhe" />
+  <meta property="og:description" content="Complete list of books by Gopal Bodhe." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://USERNAME.github.io/gopal-bodhe-site/books.html" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-logo">Gopal Bodhe</div>
+      <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#featured">Featured</a>
+        <a href="books.html">All Books</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-header">
+        <h2>All Books</h2>
+        <p>Browse the full catalog. Click “Order via WhatsApp” to place an order.</p>
+      </div>
+      <div id="all-books">
+        <!-- Filled by JS -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating WhatsApp -->
+  <a href="#" id="floating-whatsapp">
+    <span>WhatsApp</span>
+  </a>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Gopal Bodhe.</span>
+      <span><a href="index.html" style="color:#9ca3af;">Back to home</a></span>
+    </div>
+  </footer>
+
+  <script src="assets/js/books.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const yearSpan = document.getElementById("year");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
+</body>
+</html>
