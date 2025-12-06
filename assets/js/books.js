@@ -10,7 +10,7 @@ const AUTHOR = {
   tagline: "Author of engaging, insightful and thought-provoking books.",
   shortBio:
     "Shri Gopal Bodhe is an author whose work focuses on lived experience, reflection and practical wisdom. Replace this text with an accurate short bio.",
-  email: "change-this-email@example.com" // TODO: replace with real email
+  email: "bodheg@gmail.com" // TODO: replace with real email
 };
 
 // ====== BOOK DATA MODEL ======
@@ -40,12 +40,12 @@ const BOOKS = [
   },
   {
     id: 2,
-    title: "Sample Book Two",
+    title: "Mumbai Book",
     slug: "sample-book-two",
     subtitle: "",
     description:
       "Another placeholder entry. Add the real book name, theme, and a short blurb here.",
-    coverImage: "assets/images/books/fort-book.jpg",
+    coverImage: "assets/images/books/mumbai.jpg",
     price: 299,
     currency: DEFAULT_CURRENCY,
     isbn: "",
