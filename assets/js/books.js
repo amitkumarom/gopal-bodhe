@@ -1,11 +1,11 @@
 // File: assets/js/books.js
 
 // ====== CONFIG ======
-const WHATSAPP_NUMBER = "+919930027257"; // e.g. 919876543210 (country code + number, no +)
+const WHATSAPP_NUMBER = "++96877248284"; // e.g. 919876543210 (country code + number, no +)
 const DEFAULT_CURRENCY = "INR";
 
 const SITE_CONFIG = {
-  whatsappNumber: "+919930027257",
+  whatsappNumber: "+96877248284",
   defaultCurrency: "INR",
   instagramUrl: "https://www.instagram.com/siddhishakti_publication?igsh=cmhoY3MxdGtxMmJh"
 };
@@ -43,7 +43,7 @@ const BOOKS = [
     isActive: true,
     externalPurchaseLink: "", // e.g. Amazon / Flipkart / Razorpay link if available
     whatsappMessageTemplate:
-      "Namaste, I would like to order the book \"Sample Book One\" by Shri Gopal Bodhe. Please share payment and shipping details."
+      "Namaste, I would like to order the book \"A Trade route\" by Shri Gopal Bodhe. Please share payment and shipping details."
   },
   {
     id: 2,
@@ -65,7 +65,7 @@ const BOOKS = [
     isActive: true,
     externalPurchaseLink: "",
     whatsappMessageTemplate:
-      "Namaste, I am interested in buying \"Sample Book Two\" by Shri Gopal Bodhe. Please share payment and shipping details."
+      "Namaste, I am interested in buying \"Mumbai Book\" by Shri Gopal Bodhe. Please share payment and shipping details."
   },
   {
     id: 3,
@@ -87,7 +87,7 @@ const BOOKS = [
     isActive: true,
     externalPurchaseLink: "",
     whatsappMessageTemplate:
-      "Namaste, I am interested in buying \"Sample Book Two\" by Shri Gopal Bodhe. Please share payment and shipping details."
+      "Namaste, I am interested in buying \"Fort Book\" by Shri Gopal Bodhe. Please share payment and shipping details."
   },
   {
     id: 4,
@@ -109,11 +109,11 @@ const BOOKS = [
     isActive: true,
     externalPurchaseLink: "",
     whatsappMessageTemplate:
-      "Namaste, I am interested in buying \"Sample Book Two\" by Shri Gopal Bodhe. Please share payment and shipping details."
+      "Namaste, I am interested in buying \"GOA Book\" by Shri Gopal Bodhe. Please share payment and shipping details."
   },
   {
     id: 5,
-    title: "Lakshadeep",
+    title: "Lakshadeep Book",
     slug: "sample-book-two",
     subtitle: "",
     description:
@@ -131,11 +131,11 @@ const BOOKS = [
     isActive: true,
     externalPurchaseLink: "",
     whatsappMessageTemplate:
-      "Namaste, I am interested in buying \"Sample Book Two\" by Shri Gopal Bodhe. Please share payment and shipping details."
+      "Namaste, I am interested in buying \"Lakshadeep Book\" by Shri Gopal Bodhe. Please share payment and shipping details."
   },
   {
     id: 6,
-    title: "Lighthouse",
+    title: "Lighthouse Book",
     slug: "sample-book-two",
     subtitle: "",
     description:
@@ -153,7 +153,7 @@ const BOOKS = [
     isActive: true,
     externalPurchaseLink: "",
     whatsappMessageTemplate:
-      "Namaste, I am interested in buying \"Sample Book Two\" by Shri Gopal Bodhe. Please share payment and shipping details."
+      "Namaste, I am interested in buying \"Lighthouse Book\" by Shri Gopal Bodhe. Please share payment and shipping details."
   },
   {
     id: 7,
@@ -175,7 +175,7 @@ const BOOKS = [
     isActive: true,
     externalPurchaseLink: "",
     whatsappMessageTemplate:
-      "Namaste, I am interested in buying \"Sample Book Two\" by Shri Gopal Bodhe. Please share payment and shipping details."
+      "Namaste, I am interested in buying \"Maharashtra Book\" by Shri Gopal Bodhe. Please share payment and shipping details."
   },
   {
     id: 8,
@@ -197,7 +197,7 @@ const BOOKS = [
     isActive: true,
     externalPurchaseLink: "",
     whatsappMessageTemplate:
-      "Namaste, I am interested in buying \"Sample Book Two\" by Shri Gopal Bodhe. Please share payment and shipping details."
+      "Namaste, I am interested in buying \"Sidhivinayak Book\" by Shri Gopal Bodhe. Please share payment and shipping details."
   }
   // TODO: Add real books 3–9 here following the same structure
 ];
