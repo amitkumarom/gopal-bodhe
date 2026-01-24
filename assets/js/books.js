@@ -13,7 +13,7 @@ const SITE_CONFIG = {
   instagramUrl: "https://www.instagram.com/siddhishakti_publication?igsh=cmhoY3MxdGtxMmJh",
 
   // Facebook page URL
-  facebookUrl: "https://www.facebook.com/your-page-here"
+  facebookUrl: "https://www.facebook.com/Siddhishaktipublication"
 };
 
 
