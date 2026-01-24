@@ -4,7 +4,7 @@
 const SITE_CONFIG = {
   // NOTE: WhatsApp format should ideally be country-code + number with NO '+' for wa.me.
   // If your current value works for you, you can keep it, but recommended: "96877248284"
-  whatsappNumber: "+96877248284",
+  whatsappNumber: "+919930027257",
 
   // Default currency used when book.currency is missing
   defaultCurrency: "INR",
@@ -32,7 +32,7 @@ const AUTHOR = {
   tagline: "Author, photographer, and pioneer of aerial imagery in India.",
   shortBio:
     "Gopal Bodhe is a photographer, author and former Indian Navy officer known for pioneering aerial photography in India. He has documented thousands of kilometres of coastline and heritage sites from the air and authored multiple books on Goa, Mumbai, Maharashtra and forts from a bird’s eye view.",
-  email: "bodheg@gmail.com" // if you want to use the real email
+  email: "Siddhishakti1@gmail.com" // if you want to use the real email
 };
 
 // ====== BOOK DATA MODEL ======
