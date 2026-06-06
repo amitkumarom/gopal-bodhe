@@ -9,13 +9,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
     content="Browse the complete list of books by author Gopal Bodhe and order directly via WhatsApp." />
-  <link rel="canonical" href="https://sidhishakti.github.io/gopal-bodhe/" />
+  <link rel="canonical" href="https://sidhishakti.github.io/gopal-bodhe/books.html" />
 
   <meta property="og:title" content="Books by Gopal Bodhe" />
   <meta property="og:description" content="Complete list of books by Gopal Bodhe." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://sidhishakti.github.io/gopal-bodhe/books.html" />
+  <meta property="og:image" content="https://sidhishakti.github.io/gopal-bodhe/assets/images/bodhe-sir.jpg" />
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Books by Gopal Bodhe" />
+  <meta name="twitter:description" content="Complete list of books by Gopal Bodhe." />
+  <meta name="twitter:image" content="https://sidhishakti.github.io/gopal-bodhe/assets/images/bodhe-sir.jpg" />
+
+  <link rel="icon" href="assets/images/bodhe-sir.jpg" type="image/jpeg" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
@@ -41,13 +49,55 @@
   </header>
 
   <main>
-    <section class="section">
+    <section class="section section-books">
       <div class="section-header">
         <h1>All Books by Gopal Bodhe</h1>
         <p>Browse the full catalog. Filter by theme or search by title/topic. Click “Order via WhatsApp” to place an order.</p>
+      </div>
 
-        <!-- Catalog controls (client-side only) -->
-        <div class="catalog-controls" aria-label="Catalog filters and search">
+      <div class="catalog-hero" role="presentation">
+        <div class="catalog-hero-copy">
+          <p class="eyebrow">Updated catalog</p>
+          <h2>Fine-art aerial photo books documenting India’s coastline, forts, and cities.</h2>
+          <p>Use the filters below to zero in on a specific geography or heritage focus. Each title ships directly from Siddhishakti Publication with protective packaging for collector libraries, galleries, and institutions.</p>
+          <ul class="catalog-highlights">
+            <li>High-resolution aerial spreads with bilingual captions.</li>
+            <li>Limited print runs personally supervised by the author.</li>
+            <li>Custom curation support for archives and research libraries.</li>
+          </ul>
+        </div>
+        <div class="catalog-hero-panel">
+          <div>
+            <h3>Need a recommendation?</h3>
+            <p>Send us your areas of interest—coastal, forts, islands, or urban studies—and we’ll suggest a bundle within one business day.</p>
+            <a href="#" class="btn btn-primary" data-global-whatsapp-link="true">WhatsApp the team</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="catalog-metrics" id="catalog-metrics" aria-live="polite">
+        <article class="metric-card">
+          <p class="metric-label">Books ready to ship</p>
+          <p class="metric-value" id="metric-total-books">0</p>
+          <p class="metric-detail">Active titles currently in print.</p>
+        </article>
+
+        <article class="metric-card">
+          <p class="metric-label">Topics covered</p>
+          <p class="metric-value" id="metric-topics">0</p>
+          <p class="metric-detail">Distinct coastlines, forts &amp; city themes.</p>
+        </article>
+
+        <article class="metric-card">
+          <p class="metric-label">Languages available</p>
+          <p class="metric-value" id="metric-languages">0</p>
+          <p class="metric-detail">Primary language of narration per title.</p>
+        </article>
+      </div>
+
+      <!-- Catalog controls (client-side only) -->
+      <div class="catalog-controls" aria-label="Catalog filters, search, and sorting">
+        <div class="catalog-controls-main">
           <div id="book-filters" class="book-filters" role="group" aria-label="Filter books by topic">
             <!-- Filled by JS -->
           </div>
@@ -57,9 +107,66 @@
             <input id="book-search-input" type="search" placeholder="Search by title or topic…" autocomplete="off" />
           </div>
         </div>
+
+        <div class="book-sort">
+          <label for="book-sort-select">Sort</label>
+          <select id="book-sort-select" aria-label="Sort books">
+            <option value="featured">Curated order</option>
+            <option value="title-asc">Title A–Z</option>
+            <option value="year-desc">Newest first</option>
+            <option value="pages-desc">Longest books</option>
+          </select>
+        </div>
       </div>
+
+      <p class="book-results-summary" id="book-results-summary" role="status" aria-live="polite">Loading catalog…</p>
+
       <div id="all-books">
         <!-- Filled by JS -->
+      </div>
+    </section>
+
+    <section class="section section-bundles" id="curated-bundles">
+      <div class="section-header">
+        <h2>Curated Bundles</h2>
+        <p>Ready-to-ship sets assembled for archives, libraries, and experience centers.</p>
+      </div>
+      <div class="section-intro">
+        <p>Each bundle focuses on a specific narrative arc—coastal heritage, fortresses, or modern cities—and includes handling notes plus a short curatorial brief for display teams.</p>
+        <div class="section-intro-cta">
+          <span>Need a custom mix?</span>
+          <a href="#" class="btn btn-outline" data-global-whatsapp-link="true">Talk to the library desk</a>
+        </div>
+      </div>
+      <div id="bundles-grid" class="bundle-grid" aria-live="polite">
+        <!-- Filled by JS -->
+      </div>
+    </section>
+
+    <section class="section section-featured-collections" id="featured-collections">
+      <div class="section-header">
+        <h2>Featured Collections</h2>
+        <p>Curatorial storylines you can program into exhibitions, festivals, and campus events.</p>
+      </div>
+      <div class="section-intro">
+        <p>Combine limited-run books with high-resolution display prints, author video walkthroughs, or lecture kits. These collections spotlight a theme and provide conversation starters for docents.</p>
+      </div>
+      <div id="collections-grid" class="collection-grid" aria-live="polite">
+        <!-- Filled by JS -->
+      </div>
+    </section>
+
+    <section class="section section-cta">
+      <div class="cta-card">
+        <div>
+          <p class="eyebrow">Concierge ordering</p>
+          <h2>Planning an exhibition or gifting the collection?</h2>
+          <p>Share the quantity, budget, and delivery city—our team will confirm availability, craft a recommended list, and arrange insured shipping.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="#" class="btn btn-primary" data-global-whatsapp-link="true">Chat on WhatsApp</a>
+          <a href="mailto:Siddhishakti1@gmail.com" class="btn btn-outline">Email Siddhishakti</a>
+        </div>
       </div>
     </section>
   </main>
