@@ -313,6 +313,10 @@ function getWhatsAppLinkWithMessage(message) {
   return `${base}?text=${encodeURIComponent(message)}`;
 }
 
+function escAttr(str) {
+  return String(str || "").replace(/&/g, "&amp;").replace(/"/g, "&quot;");
+}
+
 function getTagsArray(book) {
   if (!book) return [];
   if (Array.isArray(book.tags)) {
@@ -506,6 +510,14 @@ function renderBookCard(book, { featured = false } = {}) {
           `
               : ""
           }
+          <button type="button" class="btn btn-outline share-btn"
+            data-share-title="${escAttr(book.title)}"
+            data-share-text="${escAttr(`Check out "${book.title}" by ${AUTHOR.name}.`)}"
+            data-share-url="${escAttr(`https://sidhishakti.github.io/gopal-bodhe/books.html#${book.slug}`)}"
+            aria-label="Share ${escAttr(book.title)}">
+            <svg class="share-icon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M18 16c-.79 0-1.5.31-2.03.81L8.91 12.7A3.07 3.07 0 0 0 9 12c0-.24-.04-.47-.09-.7l7.05-4.11C16.5 7.69 17.21 8 18 8a3 3 0 0 0 0-6 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81A2.98 2.98 0 0 0 6 9a3 3 0 0 0 0 6c.79 0 1.5-.31 2.04-.81l7.05 4.12c-.05.22-.09.45-.09.69 0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3Z"/></svg>
+            Share
+          </button>
         </div>
       </div>
     </article>
@@ -857,6 +869,46 @@ function injectBookStructuredData() {
   document.head.appendChild(script);
 }
 
+function setupShareButtons() {
+  const canShare = typeof navigator.share === "function";
+  const canCopy = typeof navigator.clipboard !== "undefined" && typeof navigator.clipboard.writeText === "function";
+
+  document.querySelectorAll(".share-btn").forEach((btn) => {
+    if (btn.dataset.shareBound === "true") return;
+    btn.dataset.shareBound = "true";
+
+    if (!canShare && !canCopy) {
+      btn.hidden = true;
+      return;
+    }
+
+    btn.addEventListener("click", async () => {
+      const title = btn.dataset.shareTitle || "";
+      const text = btn.dataset.shareText || "";
+      const url = btn.dataset.shareUrl || window.location.href;
+
+      if (canShare) {
+        try {
+          await navigator.share({ title, text, url });
+        } catch (err) {
+          if (err.name !== "AbortError") console.warn("Share failed:", err);
+        }
+      } else if (canCopy) {
+        try {
+          await navigator.clipboard.writeText(url);
+          const label = btn.querySelector(".share-label");
+          const target = label || btn;
+          const original = target.textContent;
+          target.textContent = "Copied!";
+          setTimeout(() => { target.textContent = original; }, 2000);
+        } catch (err) {
+          console.warn("Copy failed:", err);
+        }
+      }
+    });
+  });
+}
+
 // ====== BOOTSTRAP ======
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -897,6 +949,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (typeof setupGlobalWhatsAppButtons === "function") {
     setupGlobalWhatsAppButtons();
+  }
+
+  if (typeof setupShareButtons === "function") {
+    setupShareButtons();
   }
 
   if (typeof injectAuthorStructuredData === "function") {

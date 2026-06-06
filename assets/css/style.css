@@ -148,6 +148,10 @@ main {
   background: #f3f4f6;
 }
 
+.share-btn {
+  gap: 0.35rem;
+}
+
 
 /* ===========
    Sections
