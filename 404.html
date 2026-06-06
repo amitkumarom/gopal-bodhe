@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Page Not Found – Gopal Bodhe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .not-found {
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+    .not-found h1 {
+      font-size: 6rem;
+      font-weight: 800;
+      color: #e5e7eb;
+      margin: 0;
+      line-height: 1;
+    }
+    .not-found h2 {
+      font-size: 1.5rem;
+      margin: 0.5rem 0 1rem;
+    }
+    .not-found p {
+      color: #6b7280;
+      margin-bottom: 2rem;
+    }
+    .not-found .btn-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-logo">Gopal Bodhe</div>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        Menu
+      </button>
+      <div class="nav-links" id="primary-nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#featured">Books</a>
+        <a href="books.html">All Books</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="not-found">
+      <h1>404</h1>
+      <h2>Page not found</h2>
+      <p>The page you're looking for doesn't exist or may have moved.</p>
+      <div class="btn-group">
+        <a href="index.html" class="btn btn-primary">Go to Homepage</a>
+        <a href="books.html" class="btn btn-secondary">Browse Books</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Gopal Bodhe. All rights reserved.</span>
+      <span><a href="books.html" style="color:#9ca3af;">View all books</a></span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/nav.js" defer></script>
+</body>
+
+</html>

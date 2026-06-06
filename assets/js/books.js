@@ -807,7 +807,7 @@ function injectAuthorStructuredData() {
     description: AUTHOR.shortBio,
     jobTitle: "Author",
     email: AUTHOR.email,
-    url: window.location.origin,
+    url: "https://sidhishakti.github.io/gopal-bodhe/",
     sameAs: [
       SITE_CONFIG.instagramUrl,
       SITE_CONFIG.facebookUrl,
